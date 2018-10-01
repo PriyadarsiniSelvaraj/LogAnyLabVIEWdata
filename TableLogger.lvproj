@@ -26,6 +26,7 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Example.vi" Type="VI" URL="../Example.vi"/>
+		<Item Name="SimpleExample.vi" Type="VI" URL="../SimpleExample.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VCluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VCluster__ogtk.vi"/>
@@ -378,7 +379,7 @@
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="List Directory Recursive__ogtk.vi" Type="VI" URL="../../../Program Files/National Instruments/LabVIEW 2018/user.lib/_OpenG.lib/file/file.llb/List Directory Recursive__ogtk.vi"/>
+			<Item Name="List Directory Recursive__ogtk.vi" Type="VI" URL="../../../../C/Program Files/National Instruments/LabVIEW 2018/user.lib/_OpenG.lib/file/file.llb/List Directory Recursive__ogtk.vi"/>
 			<Item Name="TableLogger_SQLite_Actor.lvclass" Type="LVClass" URL="../TableLogger_SQLite_Actor/TableLogger_SQLite_Actor/Unit Tests/TableLogger_SQLite_Actor.lvclass"/>
 			<Item Name="TableLoggerBackupConfig.ctl" Type="VI" URL="../TableLogger_SQLite_Actor/TableLogger_Actor/TableLoggerBackupConfig.ctl"/>
 			<Item Name="TableLoggerConfig.ctl" Type="VI" URL="../TableLogger_SQLite_Actor/TableLogger_Actor/TableLoggerConfig.ctl"/>
