@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="14008000">
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -16,8 +17,11 @@
 		<Item Name="TableLogger_Actor" Type="Folder" URL="../TableLogger_Actor">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="TableLogger_CSV_Actor" Type="Folder" URL="../TableLogger_CSV_Actor">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+		<Item Name="TableLogger_CSV_Actor" Type="Folder">
+			<Item Name="TableLogger_CSV_Actor" Type="Folder">
+				<Item Name="UnitTests" Type="Folder"/>
+			</Item>
+			<Item Name="TableLogger_CSV_Actor.lvlib" Type="Library" URL="../TableLogger_CSV_Actor/TableLogger_CSV_Actor.lvlib"/>
 		</Item>
 		<Item Name="TableLogger_SQLite_Actor" Type="Folder" URL="../TableLogger_SQLite_Actor">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
@@ -151,7 +155,6 @@
 				<Item Name="Filter 1D Array with Scalar (U64)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Filter 1D Array with Scalar (U64)__ogtk.vi"/>
 				<Item Name="Filter 1D Array with Scalar (Variant)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Filter 1D Array with Scalar (Variant)__ogtk.vi"/>
 				<Item Name="Filter 1D Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Filter 1D Array__ogtk.vi"/>
-				<Item Name="Force File Move__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Force File Move__ogtk.vi"/>
 				<Item Name="Get Array Element Default Data__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Array Element Default Data__ogtk.vi"/>
 				<Item Name="Get Array Element TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Array Element TD__ogtk.vi"/>
 				<Item Name="Get Array Element TDEnum__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Array Element TDEnum__ogtk.vi"/>
@@ -169,7 +172,6 @@
 				<Item Name="Get TDEnum from Data__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get TDEnum from Data__ogtk.vi"/>
 				<Item Name="Get Variant Attributes__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Variant Attributes__ogtk.vi"/>
 				<Item Name="Get Waveform Type Enum from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Waveform Type Enum from TD__ogtk.vi"/>
-				<Item Name="List Directory Recursive__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/List Directory Recursive__ogtk.vi"/>
 				<Item Name="List Directory__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/List Directory__ogtk.vi"/>
 				<Item Name="Parse String with TDs__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Parse String with TDs__ogtk.vi"/>
 				<Item Name="Remove Duplicates from 1D Array (Boolean)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Remove Duplicates from 1D Array (Boolean)__ogtk.vi"/>
@@ -301,8 +303,10 @@
 				<Item Name="Type Descriptor__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor__ogtk.ctl"/>
 				<Item Name="Valid Path - Traditional__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Valid Path - Traditional__ogtk.vi"/>
 				<Item Name="Variant to Header Info__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Variant to Header Info__ogtk.vi"/>
-				<Item Name="Wait (ms)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/time/time.llb/Wait (ms)__ogtk.vi"/>
 				<Item Name="Waveform Subtype Enum__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Waveform Subtype Enum__ogtk.ctl"/>
+				<Item Name="Force File Move__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/Force File Move__ogtk.vi"/>
+				<Item Name="List Directory Recursive__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/file/file.llb/List Directory Recursive__ogtk.vi"/>
+				<Item Name="Wait (ms)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/time/time.llb/Wait (ms)__ogtk.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
@@ -379,11 +383,11 @@
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="List Directory Recursive__ogtk.vi" Type="VI" URL="../../../../C/Program Files/National Instruments/LabVIEW 2018/user.lib/_OpenG.lib/file/file.llb/List Directory Recursive__ogtk.vi"/>
+			<Item Name="CSVsub_ConditionalDataCheck.vi" Type="VI" URL="../TableLogger_CSV_Actor/TableLogger_CSV_Actor/CSVsub_ConditionalDataCheck.vi"/>
 			<Item Name="TableLogger_SQLite_Actor.lvclass" Type="LVClass" URL="../TableLogger_SQLite_Actor/TableLogger_SQLite_Actor/Unit Tests/TableLogger_SQLite_Actor.lvclass"/>
-			<Item Name="TableLoggerBackupConfig.ctl" Type="VI" URL="../TableLogger_SQLite_Actor/TableLogger_Actor/TableLoggerBackupConfig.ctl"/>
 			<Item Name="TableLoggerConfig.ctl" Type="VI" URL="../TableLogger_SQLite_Actor/TableLogger_Actor/TableLoggerConfig.ctl"/>
 			<Item Name="TableLoggerTypes.ctl" Type="VI" URL="../TableLogger_SQLite_Actor/TableLogger_Actor/TableLoggerTypes.ctl"/>
+			<Item Name="TableLoggerBackupConfig.ctl" Type="VI" URL="../TableLogger_SQLite_Actor/TableLogger_Actor/TableLoggerBackupConfig.ctl"/>
 			<Item Name="Wait (ms)__ogtk.vi" Type="VI" URL="../../../C/Program Files/National Instruments/LabVIEW 2018/user.lib/_OpenG.lib/time/time.llb/Wait (ms)__ogtk.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
