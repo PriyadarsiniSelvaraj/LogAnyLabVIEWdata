@@ -424,11 +424,6 @@
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="TableLogger_SQLite_Actor.lvclass" Type="LVClass" URL="../TableLogger_SQLite_Actor/TableLogger_SQLite_Actor/Unit Tests/TableLogger_SQLite_Actor.lvclass"/>
-			<Item Name="TableLoggerConfig.ctl" Type="VI" URL="../TableLogger_SQLite_Actor/TableLogger_Actor/TableLoggerConfig.ctl"/>
-			<Item Name="TableLoggerTypes.ctl" Type="VI" URL="../TableLogger_SQLite_Actor/TableLogger_Actor/TableLoggerTypes.ctl"/>
-			<Item Name="TableLoggerBackupConfig.ctl" Type="VI" URL="../TableLogger_SQLite_Actor/TableLogger_Actor/TableLoggerBackupConfig.ctl"/>
-			<Item Name="Wait (ms)__ogtk.vi" Type="VI" URL="../../../C/Program Files/National Instruments/LabVIEW 2018/user.lib/_OpenG.lib/time/time.llb/Wait (ms)__ogtk.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
