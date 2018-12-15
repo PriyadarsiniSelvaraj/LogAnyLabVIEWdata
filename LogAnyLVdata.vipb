@@ -1,10 +1,10 @@
-<VI_Package_Builder_Settings Version="2017" Created_Date="2018-11-13 16:03:41" Modified_Date="2018-11-13 16:34:28" Creator="Win7VM" Comments="" ID="9ebe983cdbe7a9192dbbf1399b64a92a">
+<VI_Package_Builder_Settings Version="2017" Created_Date="2018-11-13 16:03:41" Modified_Date="2018-12-15 10:22:38" Creator="Win7VM" Comments="" ID="421b0d10d08c304839fa509052fa0df7">
   <Library_General_Settings>
     <Package_File_Name>AJ_lib_LogAnyLVdata</Package_File_Name>
     <Library_Version>1.0.0.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
-    <Library_Output_Folder>.</Library_Output_Folder>
+    <Library_Output_Folder>Builds</Library_Output_Folder>
     <Company_Name>AJ</Company_Name>
     <Library_Summary/>
     <Library_License/>
@@ -16,7 +16,9 @@
     <Target>LabVIEW</Target>
   </Library_General_Settings>
   <Advanced_Settings>
-    <Package_Dependencies/>
+    <Package_Dependencies>
+      <Additional_External_Dependencies>drjdpowell_lib_sqlite_labview &gt;=1.6.2.58</Additional_External_Dependencies>
+    </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
       <Post-Build_VI/>
@@ -123,9 +125,12 @@
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
-      <Compile_Exclusions>
-        <Path/>
-      </Compile_Exclusions>
+      <Exclusions>
+        <Path>Unit Tests</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>aj_lib_loganylvdata-1.0.0.1.zip</Path>
+      </Exclusions>
     </Source_Files>
     <License_Agreement_Filepath/>
     <Licensing_and_Activation>
@@ -253,7 +258,7 @@
         <Path>&lt;vi.lib&gt;\ActorFramework\Stop Msg\Send Normal Stop.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C135B82440EE6D6686C4D195472FFD61</GUID>
+      <GUID>A8F8BB2CD481FAC1A136C40D5183F8D3</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

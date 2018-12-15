@@ -11,17 +11,11 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Helpers" Type="Folder" URL="../Helpers">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
 		<Item Name="TableLogger_Actor" Type="Folder" URL="../TableLogger_Actor">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="TableLogger_CSV_Actor" Type="Folder">
-			<Item Name="TableLogger_CSV_Actor" Type="Folder">
-				<Item Name="UnitTests" Type="Folder"/>
-			</Item>
-			<Item Name="TableLogger_CSV_Actor.lvlib" Type="Library" URL="../TableLogger_CSV_Actor/TableLogger_CSV_Actor.lvlib"/>
+		<Item Name="TableLogger_CSV_Actor" Type="Folder" URL="../TableLogger_CSV_Actor">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="TableLogger_SQLite_Actor" Type="Folder" URL="../TableLogger_SQLite_Actor">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
